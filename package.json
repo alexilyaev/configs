@@ -1,0 +1,27 @@
+{
+  "name": "typescripts-configs",
+  "version": "0.0.0",
+  "description": "Common composable TypeScript configs",
+  "scripts": {
+    "format": "prettier --write ."
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "packageManager": "pnpm@9.11.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexilyaev/typescripts-configs.git"
+  },
+  "keywords": [
+    "typescript",
+    "tsconfig",
+    "configs"
+  ],
+  "author": "Alex Ilyaev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexilyaev/typescripts-configs/issues"
+  },
+  "homepage": "https://github.com/alexilyaev/typescripts-configs#readme"
+}
