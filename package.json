@@ -2,11 +2,35 @@
   "name": "typescripts-configs",
   "version": "0.0.0",
   "description": "Common composable TypeScript configs",
+  "type": "module",
+  "files": [
+    "configs/**"
+  ],
   "scripts": {
-    "format": "prettier --write ."
+    "prepare": "husky",
+    "build": "...",
+    "start": "...",
+    "lint-eslint": "eslint --max-warnings 0 '**/*.{js,cjs,ts,mts,tsx}'",
+    "lint-eslint-debug": "DEBUG=eslint:cli-engine pnpm lint-eslint",
+    "lint-eslint-summary": "pnpm lint-eslint -f summary",
+    "lint-eslint-print-config": "eslint --print-config temp.ts",
+    "lint-prettier": "prettier --check '**/*.{js,cjs,ts,mts,tsx,html,css,json,md}'",
+    "lint": "pnpm lint-eslint && pnpm lint-prettier",
+    "format-eslint": "eslint --fix '**/*.{js,cjs,ts,mts,tsx}'",
+    "format-prettier": "prettier --write '**/*.{js,cjs,ts,mts,tsx,html,css,json,md}'",
+    "format": "pnpm format-eslint && pnpm format-prettier",
+    "type-check": "tsc --noEmit"
+  },
+  "lint-staged": {
+    "*.{js,cjs,ts,mts,tsx}": [
+      "prettier --write"
+    ],
+    "*.{html,css,json,md}": [
+      "prettier --write"
+    ]
   },
   "engines": {
-    "node": ">=20.0.0"
+    "node": ">=18.12.0"
   },
   "packageManager": "pnpm@9.11.0",
   "repository": {
@@ -23,5 +47,20 @@
   "bugs": {
     "url": "https://github.com/alexilyaev/typescripts-configs/issues"
   },
-  "homepage": "https://github.com/alexilyaev/typescripts-configs#readme"
+  "homepage": "https://github.com/alexilyaev/typescripts-configs#readme",
+  "devDependencies": {
+    "@total-typescript/ts-reset": "0.6.1",
+    "@types/eslint": "9.6.1",
+    "@typescript-eslint/eslint-plugin": "8.7.0",
+    "@typescript-eslint/parser": "8.7.0",
+    "eslint": "8.57.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-gitignore": "0.1.0",
+    "eslint-import-resolver-typescript": "3.6.3",
+    "eslint-plugin-import": "2.30.0",
+    "husky": "9.1.6",
+    "lint-staged": "15.2.10",
+    "prettier": "3.3.3",
+    "typescript": "5.6.2"
+  }
 }
