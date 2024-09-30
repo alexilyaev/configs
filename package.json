@@ -22,15 +22,19 @@
     "type-check": "tsc --noEmit"
   },
   "devDependencies": {
+    "@stylistic/eslint-plugin": "2.8.0",
     "@total-typescript/ts-reset": "0.6.1",
     "@types/eslint": "9.6.1",
     "@typescript-eslint/eslint-plugin": "8.7.0",
     "@typescript-eslint/parser": "8.7.0",
     "eslint": "8.57.0",
+    "eslint-config-ai": "3.4.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-gitignore": "0.1.0",
     "eslint-import-resolver-typescript": "3.6.3",
+    "eslint-plugin-eslint-comments": "3.2.0",
     "eslint-plugin-import": "2.30.0",
+    "eslint-plugin-unicorn": "55.0.0",
     "husky": "9.1.6",
     "lint-staged": "15.2.10",
     "prettier": "3.3.3",
@@ -38,6 +42,7 @@
   },
   "lint-staged": {
     "*.{js,cjs,ts,mts,tsx}": [
+      "eslint --fix",
       "prettier --write"
     ],
     "*.{html,css,json,md}": [
