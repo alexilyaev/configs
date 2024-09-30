@@ -1,7 +1,7 @@
 {
-  "name": "typescripts-configs",
+  "name": "@alexilyaev/configs",
   "version": "0.0.0",
-  "description": "Common composable TypeScript configs",
+  "description": "Common composable configs by Alex Ilyaev",
   "type": "module",
   "files": [
     "configs/**"
@@ -21,33 +21,6 @@
     "format": "pnpm format-eslint && pnpm format-prettier",
     "type-check": "tsc --noEmit"
   },
-  "lint-staged": {
-    "*.{js,cjs,ts,mts,tsx}": [
-      "prettier --write"
-    ],
-    "*.{html,css,json,md}": [
-      "prettier --write"
-    ]
-  },
-  "engines": {
-    "node": ">=18.12.0"
-  },
-  "packageManager": "pnpm@9.11.0",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alexilyaev/typescripts-configs.git"
-  },
-  "keywords": [
-    "typescript",
-    "tsconfig",
-    "configs"
-  ],
-  "author": "Alex Ilyaev",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/alexilyaev/typescripts-configs/issues"
-  },
-  "homepage": "https://github.com/alexilyaev/typescripts-configs#readme",
   "devDependencies": {
     "@total-typescript/ts-reset": "0.6.1",
     "@types/eslint": "9.6.1",
@@ -62,5 +35,32 @@
     "lint-staged": "15.2.10",
     "prettier": "3.3.3",
     "typescript": "5.6.2"
-  }
+  },
+  "lint-staged": {
+    "*.{js,cjs,ts,mts,tsx}": [
+      "prettier --write"
+    ],
+    "*.{html,css,json,md}": [
+      "prettier --write"
+    ]
+  },
+  "engines": {
+    "node": ">=18.12.0"
+  },
+  "packageManager": "pnpm@9.11.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexilyaev/configs.git"
+  },
+  "keywords": [
+    "typescript",
+    "tsconfig",
+    "configs"
+  ],
+  "author": "Alex Ilyaev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexilyaev/configs/issues"
+  },
+  "homepage": "https://github.com/alexilyaev/configs#readme"
 }

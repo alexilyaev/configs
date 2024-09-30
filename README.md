@@ -1,3 +1,3 @@
-# typescripts-configs
+# @alexilyaev/configs
 
-Common composable TypeScript configs
+Common composable configs by Alex Ilyaev
