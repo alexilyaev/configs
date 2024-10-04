@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": ["./base.json"],
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "types": ["@remix-run/node", "vite/client"],
+    "paths": {
+      "~/*": ["${configDir}/app/*"]
+    }
+  },
+  "include": [
+    "${configDir}/**/*.ts",
+    "${configDir}/**/*.tsx",
+    "${configDir}/**/*.json",
+    "${configDir}/**/.server/**/*.ts",
+    "${configDir}/**/.server/**/*.tsx",
+    "${configDir}/**/.client/**/*.ts",
+    "${configDir}/**/.client/**/*.tsx"
+  ],
+  "exclude": ["${configDir}/node_modules"]
+}
