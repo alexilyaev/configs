@@ -4,7 +4,7 @@
   "description": "Common composable configs by Alex Ilyaev",
   "type": "module",
   "files": [
-    "configs/**"
+    "tsconfig"
   ],
   "scripts": {
     "prepare": "husky",
