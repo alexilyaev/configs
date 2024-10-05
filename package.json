@@ -1,6 +1,6 @@
 {
   "name": "@alexilyaev/configs",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Common composable configs by Alex Ilyaev",
   "type": "module",
   "files": [
