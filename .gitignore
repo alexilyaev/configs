@@ -68,3 +68,6 @@ db.sqlite
 /.next
 /out
 next-env.d.ts
+
+# Deployment Platforms
+.vercel
