@@ -22,11 +22,16 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "ES2022",
-    "types": [],
+    // TypeScript resolves all `@types` packages by default
+    // So we don't need to include them in the `types` array
+    // Configs that do set `types` will lose this default behavior
+    // Which negatively impacts the DX of auto-importing in code
+    "types": null,
     "verbatimModuleSyntax": true
   },
   "include": [
     "${configDir}/**/*.ts",
+    "${configDir}/**/*.mts",
     "${configDir}/**/*.tsx",
     "${configDir}/**/*.json"
   ],
