@@ -15,6 +15,7 @@
     "${configDir}/**/*.tsx",
     "${configDir}/**/*.json",
     "${configDir}/src/env.js",
+    "${configDir}/next-env.d.ts",
     "${configDir}/.next/types/**/*.ts"
   ],
   "exclude": ["${configDir}/node_modules", "${configDir}/.next"]
