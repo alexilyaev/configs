@@ -11,11 +11,12 @@
       "~/*": ["${configDir}/src/*"]
     }
   },
-  // Note that extending this config without defining `include` in your
-  // `tsconfig.json` fails Next.js `dev`, `build`, and `lint` commands.
-  // So, you must copy this `include` array to your `tsconfig.json`
-  // but without the `${configDir}/` prefix.
-  // ... GitHub Issue: TBD
+  // Important Note:
+  // In Next v14, extending this config without defining `include` in your
+  // `tsconfig.json` will fails `next dev`, `next build` and `next lint` commands.
+  // In Next v15 it won't throw, but will automatically copy this `include` array
+  // and add `.next/types` to it, even though we already have it here.
+  // https://github.com/vercel/next.js/issues/70912#issuecomment-2399363567
   "include": [
     "${configDir}/**/*.ts",
     "${configDir}/**/*.mts",
