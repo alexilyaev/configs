@@ -5,6 +5,7 @@
   "type": "module",
   "files": [
     "lint-staged",
+    "prettier",
     "tsconfig"
   ],
   "scripts": {
