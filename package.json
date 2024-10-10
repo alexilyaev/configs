@@ -4,6 +4,7 @@
   "description": "Common composable configs by Alex Ilyaev",
   "type": "module",
   "files": [
+    "lint-staged",
     "tsconfig"
   ],
   "scripts": {

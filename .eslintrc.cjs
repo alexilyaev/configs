@@ -127,9 +127,8 @@ module.exports = {
         '.*.{js,cjs,ts,mts}',
         '*.config.{js,cjs,ts,mts}',
         '.storybook/**/*.{js,ts}',
-        // Next.js specific files
-        'src/middleware.{js,ts}',
-        'src/app/**/{page,layout,loading,not-found,error,global-error}.{jsx,tsx}',
+        // Specific to this project
+        'lint-staged/**/*.{js,ts}',
       ],
       env: {
         node: true,
