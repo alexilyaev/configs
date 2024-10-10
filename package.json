@@ -25,6 +25,7 @@
     "@stylistic/eslint-plugin": "2.8.0",
     "@total-typescript/ts-reset": "0.6.1",
     "@types/eslint": "9.6.1",
+    "@types/node": "20",
     "@typescript-eslint/eslint-plugin": "8.7.0",
     "@typescript-eslint/parser": "8.7.0",
     "eslint": "8.57.0",
@@ -42,7 +43,7 @@
   },
   "lint-staged": {
     "*.{js,cjs,ts,mts,tsx}": [
-      "eslint --fix",
+      "eslint --fix --max-warnings 0",
       "prettier --write"
     ],
     "*.{html,css,json,md}": [
