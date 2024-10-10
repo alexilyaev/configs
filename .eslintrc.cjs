@@ -30,7 +30,7 @@ module.exports = {
   overrides: [
     // TypeScript files
     {
-      files: ['*.{ts,tsx}'],
+      files: ['**/*.{ts,mts,tsx}'],
       extends: [
         'plugin:@typescript-eslint/recommended-type-checked',
         'plugin:@typescript-eslint/stylistic-type-checked',
@@ -38,6 +38,18 @@ module.exports = {
       plugins: ['@typescript-eslint'],
       parserOptions: {
         project: true,
+      },
+      settings: {
+        'import/internal-regex': '^~/',
+        'import/resolver': {
+          node: {
+            extensions: ['.ts', '.tsx'],
+          },
+          typescript: {
+            alwaysTryTypes: true,
+            // project: `${__dirname}/tsconfig.json`,
+          },
+        },
       },
       rules: {
         '@typescript-eslint/array-type': 'off',
@@ -52,7 +64,13 @@ module.exports = {
         '@typescript-eslint/no-unused-vars': [
           'warn',
           {
+            args: 'after-used',
             argsIgnorePattern: '^_',
+            caughtErrors: 'all',
+            caughtErrorsIgnorePattern: '^_',
+            destructuredArrayIgnorePattern: '^_',
+            varsIgnorePattern: '^_',
+            ignoreRestSiblings: true,
           },
         ],
         '@typescript-eslint/require-await': 'off',
@@ -129,6 +147,7 @@ module.exports = {
         '.storybook/**/*.{js,ts}',
         // Specific to this project
         'lint-staged/**/*.{js,ts}',
+        'prettier/**/*.{js,ts}',
       ],
       env: {
         node: true,
