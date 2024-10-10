@@ -9,10 +9,15 @@
     // Which negatively impacts the DX of auto-importing in code
     // If you use this, explicitly add here the types packages to include
     // "types": ["@remix-run/node", "vite/client"],
+
     "paths": {
       "~/*": ["${configDir}/app/*"]
     }
   },
+  // Important Note:
+  // This doesn't work in Remix when running `remix vite:dev` or `remix vite:build`
+  // Remix doesn't support the `@{configDir}` syntax in the `include` array yet
+  // ... GitHub Issue TBD
   "include": [
     "${configDir}/**/*.ts",
     "${configDir}/**/*.mts",
