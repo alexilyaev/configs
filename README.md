@@ -2,9 +2,9 @@
 
 Common composable configs by Alex Ilyaev
 
-## Usage
+## tsconfig.json
 
-### All TypeScript projects, including Node.js projects
+All TypeScript projects, including Node.js projects
 
 ```jsonc
 {
@@ -12,7 +12,7 @@ Common composable configs by Alex Ilyaev
 }
 ```
 
-### Next.js projects
+Next.js projects
 
 ```jsonc
 {
@@ -20,7 +20,7 @@ Common composable configs by Alex Ilyaev
 }
 ```
 
-### Remix projects
+Remix projects
 
 ```jsonc
 {
@@ -28,10 +28,40 @@ Common composable configs by Alex Ilyaev
 }
 ```
 
-### React (no meta-framework) projects
+Plain React projects
 
 ```jsonc
 {
   "extends": ["@alexilyaev/configs/tsconfig/react"],
 }
+```
+
+## `prettier.config.js`
+
+All projects
+
+```js
+export { default } from '@alexilyaev/configs/prettier/base.js';
+```
+
+Including Tailwind CSS
+
+```js
+export { default } from '@alexilyaev/configs/prettier/tailwindcss.js';
+```
+
+## `lint-staged.config.js`
+
+All projects
+
+```js
+export { default } from '@alexilyaev/configs/lint-staged/base.js';
+```
+
+## `.browserslistrc`
+
+All projects
+
+```
+extends @alexilyaev/configs/browserslist/web.cjs
 ```

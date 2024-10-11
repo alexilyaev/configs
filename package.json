@@ -4,6 +4,7 @@
   "description": "Common composable configs by Alex Ilyaev",
   "type": "module",
   "files": [
+    "browserslist",
     "lint-staged",
     "prettier",
     "tsconfig"
@@ -21,6 +22,8 @@
     "format-eslint": "eslint --fix '**/*.{js,cjs,ts,mts,tsx}'",
     "format-prettier": "prettier --write '**/*.{js,cjs,ts,mts,tsx,html,css,json,md}'",
     "format": "pnpm format-eslint && pnpm format-prettier",
+    "test": "vitest run",
+    "test-watch": "vitest watch",
     "type-check": "tsc --noEmit"
   },
   "devDependencies": {
@@ -30,6 +33,7 @@
     "@types/node": "20",
     "@typescript-eslint/eslint-plugin": "8.7.0",
     "@typescript-eslint/parser": "8.7.0",
+    "browserslist-lint": "0.3.3",
     "eslint": "8.57.0",
     "eslint-config-ai": "3.4.0",
     "eslint-config-prettier": "9.1.0",
@@ -42,7 +46,8 @@
     "lint-staged": "15.2.10",
     "prettier": "3.3.3",
     "prettier-plugin-tailwindcss": "0.6.8",
-    "typescript": "5.6.2"
+    "typescript": "5.6.2",
+    "vitest": "2.1.2"
   },
   "engines": {
     "node": ">=18.12.0"

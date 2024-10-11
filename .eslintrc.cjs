@@ -146,8 +146,7 @@ module.exports = {
         '*.config.{js,cjs,ts,mts}',
         '.storybook/**/*.{js,ts}',
         // Specific to this project
-        'lint-staged/**/*.{js,ts}',
-        'prettier/**/*.{js,ts}',
+        '{lint-staged,prettier,browserslist}/**/*.{js,ts}',
       ],
       env: {
         node: true,

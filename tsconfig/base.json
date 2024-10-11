@@ -33,6 +33,7 @@
     "${configDir}/**/*.ts",
     "${configDir}/**/*.mts",
     "${configDir}/**/*.tsx",
+    "${configDir}/**/*.cjs",
     "${configDir}/**/*.json"
   ],
   "exclude": [
