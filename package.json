@@ -13,6 +13,7 @@
     "prepare": "husky",
     "build": "...",
     "start": "...",
+    "publish-browserslist-config": "cd browserslist && npm version patch && npm publish",
     "lint-eslint": "eslint --max-warnings 0 '**/*.{js,cjs,ts,mts,tsx}'",
     "lint-eslint-debug": "DEBUG=eslint:cli-engine pnpm lint-eslint",
     "lint-eslint-summary": "pnpm lint-eslint -f summary",
@@ -22,8 +23,9 @@
     "format-eslint": "eslint --fix '**/*.{js,cjs,ts,mts,tsx}'",
     "format-prettier": "prettier --write '**/*.{js,cjs,ts,mts,tsx,html,css,json,md}'",
     "format": "pnpm format-eslint && pnpm format-prettier",
-    "test": "vitest run",
+    "test": "vitest run && pnpm test-browserslist-exports",
     "test-watch": "vitest watch",
+    "test-browserslist-exports": "validate-package-exports browserslist/package.json -i -v",
     "type-check": "tsc --noEmit"
   },
   "devDependencies": {
@@ -47,6 +49,7 @@
     "prettier": "3.3.3",
     "prettier-plugin-tailwindcss": "0.6.8",
     "typescript": "5.6.2",
+    "validate-package-exports": "0.7.0",
     "vitest": "2.1.2"
   },
   "engines": {

@@ -60,8 +60,18 @@ export { default } from '@alexilyaev/configs/lint-staged/base.js';
 
 ## `.browserslistrc`
 
-All projects
+```shell
+pnpm add -D @alexilyaev/browserslist-config
+```
+
+Web projects
 
 ```
-extends @alexilyaev/configs/browserslist/web.cjs
+extends @alexilyaev/browserslist-config/web
+```
+
+Node projects
+
+```
+extends @alexilyaev/browserslist-config/node-maintained
 ```

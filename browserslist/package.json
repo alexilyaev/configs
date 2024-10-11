@@ -1,0 +1,31 @@
+{
+  "name": "@alexilyaev/browserslist-config",
+  "version": "0.1.2",
+  "description": "Common browserslist configs by Alex Ilyaev",
+  "type": "module",
+  "files": [
+    "*.cjs"
+  ],
+  "exports": {
+    "./web": "./web.cjs",
+    "./node-maintained": "./node-maintained.cjs"
+  },
+  "engines": {
+    "node": ">=18.12.0"
+  },
+  "packageManager": "pnpm@9.11.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexilyaev/configs.git"
+  },
+  "keywords": [
+    "browserslist-config",
+    "browserslist"
+  ],
+  "author": "Alex Ilyaev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexilyaev/configs/issues"
+  },
+  "homepage": "https://github.com/alexilyaev/configs#readme"
+}
