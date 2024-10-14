@@ -22,6 +22,7 @@ module.exports = {
   extends: [
     // https://github.com/alexilyaev/eslint-config-ai/blob/master/base.js
     'ai',
+    'ai/typescript',
     'ai/unicorn',
     'ai/import',
     'ai/eslint-comments',
@@ -30,59 +31,8 @@ module.exports = {
   overrides: [
     // TypeScript files
     {
-      files: ['**/*.{ts,mts,tsx}'],
-      extends: [
-        'plugin:@typescript-eslint/recommended-type-checked',
-        'plugin:@typescript-eslint/stylistic-type-checked',
-      ],
-      plugins: ['@typescript-eslint'],
-      parserOptions: {
-        project: true,
-      },
-      settings: {
-        'import/internal-regex': '^~/',
-        'import/resolver': {
-          node: {
-            extensions: ['.ts', '.tsx'],
-          },
-          typescript: {
-            alwaysTryTypes: true,
-            // project: `${__dirname}/tsconfig.json`,
-          },
-        },
-      },
+      files: ['**/*.{ts,tsx,mts,cts}'],
       rules: {
-        '@typescript-eslint/array-type': 'off',
-        '@typescript-eslint/consistent-type-definitions': 'off',
-        '@typescript-eslint/consistent-type-imports': [
-          'warn',
-          {
-            prefer: 'type-imports',
-            fixStyle: 'inline-type-imports',
-          },
-        ],
-        '@typescript-eslint/no-unused-vars': [
-          'warn',
-          {
-            args: 'after-used',
-            argsIgnorePattern: '^_',
-            caughtErrors: 'all',
-            caughtErrorsIgnorePattern: '^_',
-            destructuredArrayIgnorePattern: '^_',
-            varsIgnorePattern: '^_',
-            ignoreRestSiblings: true,
-          },
-        ],
-        '@typescript-eslint/require-await': 'off',
-        '@typescript-eslint/no-misused-promises': [
-          'error',
-          {
-            checksVoidReturn: {
-              attributes: false,
-            },
-          },
-        ],
-
         /**
          * eslint-plugin-import
          *
