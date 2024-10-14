@@ -54,6 +54,13 @@ module.exports = {
             pathGroups: importOrderPathGroups,
             pathGroupsExcludedImportTypes: ['builtin'],
             'newlines-between': 'never',
+            named: {
+              enabled: true,
+              types: 'types-first',
+            },
+            alphabetize: {
+              order: 'asc',
+            },
           },
         ],
         // https://eslint.org/docs/latest/rules/no-restricted-imports
