@@ -60,6 +60,7 @@ module.exports = {
             },
             alphabetize: {
               order: 'asc',
+              caseInsensitive: true,
             },
           },
         ],
