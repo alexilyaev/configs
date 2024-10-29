@@ -91,6 +91,11 @@ module.exports = {
                 name: 'date-fns-tz',
                 message: `Please use "import { something } from 'date-fns-tz/something'"`,
               },
+              {
+                name: 'vitest',
+                importNames: ['it'],
+                message: `Please use "import { test } from 'vitest'"`,
+              },
             ],
           },
         ],
