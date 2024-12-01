@@ -38,7 +38,7 @@
     "@typescript-eslint/parser": "8.9.0",
     "browserslist-lint": "0.3.3",
     "eslint": "8.57.0",
-    "eslint-config-ai": "3.5.1",
+    "eslint-config-ai": "3.6.5",
     "eslint-config-prettier": "9.1.0",
     "eslint-gitignore": "0.1.0",
     "eslint-import-resolver-typescript": "3.6.3",

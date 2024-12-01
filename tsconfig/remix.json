@@ -10,6 +10,8 @@
     // If you use this, explicitly add here the types packages to include
     // "types": ["@remix-run/node", "vite/client"],
 
+    // When using shadcn CLI `add` command, this needs to be in `tsconfig.json`
+    // ... GitHub Issue TBD
     "paths": {
       "~/*": ["${configDir}/app/*"]
     }

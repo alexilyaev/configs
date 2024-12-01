@@ -33,8 +33,8 @@ importers:
         specifier: 8.57.0
         version: 8.57.0
       eslint-config-ai:
-        specifier: 3.5.1
-        version: 3.5.1(@stylistic/eslint-plugin@2.9.0(eslint@8.57.0)(typescript@5.6.2))(@typescript-eslint/eslint-plugin@8.9.0(@typescript-eslint/parser@8.9.0(eslint@8.57.0)(typescript@5.6.2))(eslint@8.57.0)(typescript@5.6.2))(@typescript-eslint/parser@8.9.0(eslint@8.57.0)(typescript@5.6.2))(eslint-config-prettier@9.1.0(eslint@8.57.0))(eslint-import-resolver-typescript@3.6.3)(eslint-plugin-eslint-comments@3.2.0(eslint@8.57.0))(eslint-plugin-import@2.31.0)(eslint-plugin-unicorn@55.0.0(eslint@8.57.0))(eslint@8.57.0)(prettier@3.3.3)(typescript@5.6.2)
+        specifier: 3.6.5
+        version: 3.6.5(@stylistic/eslint-plugin@2.9.0(eslint@8.57.0)(typescript@5.6.2))(@typescript-eslint/eslint-plugin@8.9.0(@typescript-eslint/parser@8.9.0(eslint@8.57.0)(typescript@5.6.2))(eslint@8.57.0)(typescript@5.6.2))(@typescript-eslint/parser@8.9.0(eslint@8.57.0)(typescript@5.6.2))(eslint-config-prettier@9.1.0(eslint@8.57.0))(eslint-import-resolver-typescript@3.6.3)(eslint-plugin-eslint-comments@3.2.0(eslint@8.57.0))(eslint-plugin-import@2.31.0)(eslint-plugin-unicorn@55.0.0(eslint@8.57.0))(eslint@8.57.0)(prettier@3.3.3)(typescript@5.6.2)
       eslint-config-prettier:
         specifier: 9.1.0
         version: 9.1.0(eslint@8.57.0)
@@ -933,8 +933,8 @@ packages:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
 
-  eslint-config-ai@3.5.1:
-    resolution: {integrity: sha512-2OKdP60p99WYaXcqPT/FcCfMJpOUp0vlHyLgeTD2EPVzmpGh081lwmMcT02V82kzOcD3cfiolcakEitA/9FUkg==}
+  eslint-config-ai@3.6.5:
+    resolution: {integrity: sha512-7GuA8KtfhK3N4WiiNoHaDqTf+tkJ11LZJ6nhQfg5KCvd+mUaKnvJyhaOlPSqH4L/SgYbEwkhXafmXB7q+zjU3A==}
     engines: {node: '>=18.12.0'}
     peerDependencies:
       '@stylistic/eslint-plugin': '>=1.5.0'
@@ -952,7 +952,7 @@ packages:
       eslint-plugin-lodash: '>=7.4.0'
       eslint-plugin-promise: '>=6.1.0'
       eslint-plugin-react: '>=7.33.0'
-      eslint-plugin-react-hooks: '>=4.6.0'
+      eslint-plugin-react-hooks: '>=5.0.0'
       eslint-plugin-unicorn: '>=50.0.0'
       prettier: '>=3.0.0'
       typescript: '>=5.0.0'
@@ -3387,7 +3387,7 @@ snapshots:
 
   escape-string-regexp@4.0.0: {}
 
-  eslint-config-ai@3.5.1(@stylistic/eslint-plugin@2.9.0(eslint@8.57.0)(typescript@5.6.2))(@typescript-eslint/eslint-plugin@8.9.0(@typescript-eslint/parser@8.9.0(eslint@8.57.0)(typescript@5.6.2))(eslint@8.57.0)(typescript@5.6.2))(@typescript-eslint/parser@8.9.0(eslint@8.57.0)(typescript@5.6.2))(eslint-config-prettier@9.1.0(eslint@8.57.0))(eslint-import-resolver-typescript@3.6.3)(eslint-plugin-eslint-comments@3.2.0(eslint@8.57.0))(eslint-plugin-import@2.31.0)(eslint-plugin-unicorn@55.0.0(eslint@8.57.0))(eslint@8.57.0)(prettier@3.3.3)(typescript@5.6.2):
+  eslint-config-ai@3.6.5(@stylistic/eslint-plugin@2.9.0(eslint@8.57.0)(typescript@5.6.2))(@typescript-eslint/eslint-plugin@8.9.0(@typescript-eslint/parser@8.9.0(eslint@8.57.0)(typescript@5.6.2))(eslint@8.57.0)(typescript@5.6.2))(@typescript-eslint/parser@8.9.0(eslint@8.57.0)(typescript@5.6.2))(eslint-config-prettier@9.1.0(eslint@8.57.0))(eslint-import-resolver-typescript@3.6.3)(eslint-plugin-eslint-comments@3.2.0(eslint@8.57.0))(eslint-plugin-import@2.31.0)(eslint-plugin-unicorn@55.0.0(eslint@8.57.0))(eslint@8.57.0)(prettier@3.3.3)(typescript@5.6.2):
     dependencies:
       '@stylistic/eslint-plugin': 2.9.0(eslint@8.57.0)(typescript@5.6.2)
       '@typescript-eslint/eslint-plugin': 8.9.0(@typescript-eslint/parser@8.9.0(eslint@8.57.0)(typescript@5.6.2))(eslint@8.57.0)(typescript@5.6.2)

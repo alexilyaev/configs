@@ -8,8 +8,8 @@ import prettierBaseConfig from './base.js';
  * @type {import('prettier').Config & import('prettier-plugin-tailwindcss').PluginOptions}
  * */
 const config = {
-  plugins: ['prettier-plugin-tailwindcss'],
   ...prettierBaseConfig,
+  plugins: [...prettierBaseConfig.plugins, 'prettier-plugin-tailwindcss'],
 };
 
 export default config;
