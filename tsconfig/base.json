@@ -16,12 +16,12 @@
     "noFallthroughCasesInSwitch": true,
     "noImplicitOverride": true,
     "noUncheckedIndexedAccess": true,
-    "outDir": "${configDir}/.tmp",
     "plugins": [],
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
     "target": "ES2022",
+    "tsBuildInfoFile": "${configDir}/node_modules/.tmp/tsconfig.tsbuildinfo",
     // TypeScript resolves all `@types` packages by default
     // So we don't need to include them in the `types` array
     // Configs that do set `types` will lose this default behavior
