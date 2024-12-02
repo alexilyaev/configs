@@ -9,7 +9,7 @@ const config = {
     'eslint --fix --max-warnings 0',
     'prettier --write',
   ],
-  '*.{html,css,json,md}': ['prettier --write'],
+  '*.{html,css,json,md,sql}': ['prettier --write'],
 };
 
 export default config;
