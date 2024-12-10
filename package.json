@@ -10,7 +10,6 @@
     "tsconfig"
   ],
   "scripts": {
-    "preinstall": "doesnexists",
     "prepare": "husky",
     "postpublish": "git push --follow-tags",
     "build": "...",
