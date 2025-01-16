@@ -66,12 +66,12 @@ pnpm add -D @alexilyaev/browserslist-config
 
 Web projects
 
-```
+```shell
 extends @alexilyaev/browserslist-config/web
 ```
 
 Node projects
 
-```
+```shell
 extends @alexilyaev/browserslist-config/node-maintained
 ```
