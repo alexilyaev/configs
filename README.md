@@ -41,13 +41,13 @@ Plain React projects
 All projects
 
 ```js
-export { default } from '@alexilyaev/configs/prettier/base.js';
+export { default } from '@alexilyaev/configs/prettier/base';
 ```
 
 Including Tailwind CSS
 
 ```js
-export { default } from '@alexilyaev/configs/prettier/tailwindcss.js';
+export { default } from '@alexilyaev/configs/prettier/tailwindcss';
 ```
 
 ## `lint-staged.config.js`
@@ -55,7 +55,7 @@ export { default } from '@alexilyaev/configs/prettier/tailwindcss.js';
 All projects
 
 ```js
-export { default } from '@alexilyaev/configs/lint-staged/base.js';
+export { default } from '@alexilyaev/configs/lint-staged/base';
 ```
 
 ## `.browserslistrc`
