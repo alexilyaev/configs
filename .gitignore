@@ -40,9 +40,10 @@ node_modules
 Thumbs.db
 
 # Editors stuff
-.idea
-.project
-.vscode
+.idea/**
+.project/**
+.vscode/**
+.vscode-test/**
 
 # Build stuff
 /dist
@@ -71,3 +72,5 @@ next-env.d.ts
 
 # Deployment Platforms
 .vercel
+
+# Specific to this project
