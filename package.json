@@ -12,6 +12,7 @@
   "exports": {
     ".": null,
     "./*": "./*.js",
+    "./tsconfig/*": "./tsconfig/*.json",
     "./*.json": "./*.json"
   },
   "scripts": {
