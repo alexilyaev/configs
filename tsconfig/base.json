@@ -39,6 +39,7 @@
   "exclude": [
     "${configDir}/node_modules",
     "${configDir}/build",
-    "${configDir}/dist"
+    "${configDir}/dist",
+    "${configDir}/out"
   ]
 }
