@@ -9,6 +9,11 @@
     "prettier",
     "tsconfig"
   ],
+  "exports": {
+    ".": null,
+    "./*": "./*.js",
+    "./*.json": "./*.json"
+  },
   "scripts": {
     "prepare": "husky",
     "postpublish": "git push --follow-tags",
@@ -58,10 +63,6 @@
     "node": ">=18.12.0"
   },
   "packageManager": "pnpm@9.12.1",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alexilyaev/configs.git"
-  },
   "keywords": [
     "typescript",
     "tsconfig",
@@ -69,6 +70,10 @@
   ],
   "author": "Alex Ilyaev",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexilyaev/configs.git"
+  },
   "bugs": {
     "url": "https://github.com/alexilyaev/configs/issues"
   },
