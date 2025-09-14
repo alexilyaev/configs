@@ -44,6 +44,7 @@ Thumbs.db
 .project/**
 .vscode/**
 .vscode-test/**
+!.vscode/extensions.json
 
 # Build stuff
 /dist
