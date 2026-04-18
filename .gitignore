@@ -74,4 +74,8 @@ next-env.d.ts
 # Deployment Platforms
 .vercel
 
+# Claude
+.claude
+CLAUDE.md
+
 # Specific to this project
