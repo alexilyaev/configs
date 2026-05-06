@@ -2,11 +2,9 @@
 
 [global]
 flavor = "gfm"
-exclude = [
-  ".github/**",
-]
+exclude = [".github/**"]
 disable = [
-  "MD013",  # line length — unenforceable in docs with tables/code
-  "MD024",  # duplicate headings — sometimes intentional
-  "MD041",  # first line must be H1 — files may start with frontmatter
+  "MD013", # line length — unenforceable in docs with tables/code
+  "MD024", # duplicate headings — sometimes intentional
+  "MD041", # first line must be H1 — files may start with frontmatter
 ]
