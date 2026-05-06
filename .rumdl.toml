@@ -1,0 +1,9 @@
+# rumdl config — https://github.com/rvben/rumdl
+
+[global]
+flavor = "gfm"
+disable = [
+  "MD013",  # line length — unenforceable in docs with tables/code
+  "MD024",  # duplicate headings — sometimes intentional
+  "MD041",  # first line must be H1 — files may start with frontmatter
+]

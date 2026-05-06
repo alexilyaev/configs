@@ -22,6 +22,8 @@ lerna-debug.log*
 .eslintcache
 # parcel-bundler cache (https://parceljs.org/)
 .cache
+# rumdl cache
+.rumdl_cache
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release

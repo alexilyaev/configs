@@ -12,7 +12,8 @@ const config = {
     'eslint --fix --max-warnings 0',
     'prettier --write',
   ],
-  '*.{html,css,json,md,sql}': ['prettier --write'],
+  '*.{html,css,json,sql}': ['prettier --write'],
+  '*.md': ['prettier --write', 'rumdl check --fix'],
 };
 
 export default config;
