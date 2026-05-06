@@ -25,10 +25,8 @@ pnpm format
 
 ## Publishing
 
-Bump the version in `package.json`, then:
-
 ```shell
-npm publish --access public
+npm version patch && npm publish
 ```
 
 The `postpublish` script runs `git push --follow-tags` automatically.
@@ -39,4 +37,4 @@ The `postpublish` script runs `git push --follow-tags` automatically.
 pnpm publish-browserslist-config
 ```
 
-This bumps a patch version and publishes `@alexilyaev/browserslist-config` from the `browserslist/` directory.
+Bumps a patch version and publishes `@alexilyaev/browserslist-config` from the `browserslist/` directory. Skips publish if no files in `browserslist/` have changed since the last release.

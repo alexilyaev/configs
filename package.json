@@ -20,7 +20,7 @@
     "postpublish": "git push --follow-tags",
     "build": "...",
     "start": "...",
-    "publish-browserslist-config": "cd browserslist && npm version patch && npm publish",
+    "publish-browserslist-config": "node scripts/publish-browserslist.mjs",
     "lint-eslint": "eslint --max-warnings 0 '**/*.{js,cjs,ts,mts,tsx}'",
     "lint-eslint-debug": "DEBUG=eslint:cli-engine pnpm lint-eslint",
     "lint-eslint-summary": "pnpm lint-eslint -f summary",
