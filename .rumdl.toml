@@ -2,6 +2,9 @@
 
 [global]
 flavor = "gfm"
+exclude = [
+  ".github/**",
+]
 disable = [
   "MD013",  # line length — unenforceable in docs with tables/code
   "MD024",  # duplicate headings — sometimes intentional
