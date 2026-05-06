@@ -2,8 +2,6 @@
 
 Common composable configs by Alex Ilyaev
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for setup and publish instructions.
-
 ## tsconfig.json
 
 All TypeScript projects, including Node.js projects
@@ -77,3 +75,7 @@ Node projects
 ```shell
 extends @alexilyaev/browserslist-config/node-maintained
 ```
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
