@@ -76,8 +76,11 @@ next-env.d.ts
 # Deployment Platforms
 .vercel
 
-# Claude
+# AI Agents
+.agents
 .claude
 CLAUDE.md
+.qodo
+.worktrees
 
 # Specific to this project
