@@ -80,6 +80,7 @@ next-env.d.ts
 .agents
 .claude
 CLAUDE.md
+CLAUDE.local.md
 .qodo
 .worktrees
 
